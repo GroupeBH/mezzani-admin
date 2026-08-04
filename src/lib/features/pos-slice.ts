@@ -1,10 +1,11 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import type { MenuItem, OrderType } from "@/lib/types";
+import type { CurrencyCode, MenuItem, OrderType } from "@/lib/types";
 
 export type PosCartLine = {
   itemId: string;
   name: string;
   price: number;
+  currency: CurrencyCode;
   quantity: number;
   note: string;
 };
@@ -48,6 +49,7 @@ const posSlice = createSlice({
         itemId: item.item_id,
         name: item.name,
         price: item.price,
+        currency: item.currency || "CDF",
         quantity: 1,
         note: "",
       });

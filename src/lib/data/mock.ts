@@ -103,6 +103,49 @@ export const invoices = [
   { id: "FAC-2403", customer: "Livraison", amount: 27, method: "Especes", status: "A encaisser" },
 ];
 
+export const customers = [
+  {
+    id: "CUS-001",
+    name: "Amina M.",
+    phone: "+243 820 000 101",
+    email: "amina@example.com",
+    visits: 18,
+    averageBasket: 34.6,
+    lastVisit: "2026-05-27",
+    segment: "Fidele",
+  },
+  {
+    id: "CUS-002",
+    name: "Patrick K.",
+    phone: "+243 820 000 102",
+    email: "patrick@example.com",
+    visits: 7,
+    averageBasket: 51.2,
+    lastVisit: "2026-05-25",
+    segment: "VIP",
+  },
+  {
+    id: "CUS-003",
+    name: "Sarah L.",
+    phone: "+243 820 000 103",
+    email: "sarah@example.com",
+    visits: 4,
+    averageBasket: 28.4,
+    lastVisit: "2026-05-22",
+    segment: "Reservation",
+  },
+  {
+    id: "CUS-004",
+    name: "Client comptoir",
+    phone: "+243 820 000 104",
+    email: "comptoir@example.com",
+    visits: 2,
+    averageBasket: 18.5,
+    lastVisit: "2026-05-28",
+    segment: "Nouveau",
+  },
+];
+
 export const staffPerformance = [
   { name: "Demo", orders: 42, sales: 840 },
   { name: "Amina", orders: 36, sales: 760 },

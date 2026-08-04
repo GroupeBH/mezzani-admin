@@ -10,7 +10,7 @@ export function ClientChart({ children }: { children: React.ReactNode }) {
   }, []);
 
   if (!mounted) {
-    return <div className="h-full w-full rounded-lg bg-ink/5" />;
+    return <div className="h-full w-full rounded-lg bg-surface-pressed" />;
   }
 
   return <>{children}</>;

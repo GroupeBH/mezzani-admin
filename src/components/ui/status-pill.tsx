@@ -1,11 +1,11 @@
 import { cn } from "@/lib/utils";
 
 const variants = {
-  ok: "bg-basil/10 text-basil ring-basil/20",
-  warn: "bg-saffron/18 text-[#7a560c] ring-saffron/35",
-  danger: "bg-wine/10 text-wine ring-wine/20",
-  neutral: "bg-ink/7 text-ink/70 ring-ink/10",
-  info: "bg-clay/12 text-clay ring-clay/20",
+  ok: "bg-success-light text-emerald-700 ring-success/20",
+  warn: "bg-warning-light text-amber-700 ring-warning/25",
+  danger: "bg-danger-light text-danger ring-danger/20",
+  neutral: "bg-surface-pressed text-text-secondary ring-border",
+  info: "bg-info-light text-info ring-info/20",
 };
 
 export function StatusPill({
@@ -20,7 +20,7 @@ export function StatusPill({
   return (
     <span
       className={cn(
-        "inline-flex h-7 items-center rounded-full px-2.5 text-xs font-medium ring-1",
+        "inline-flex h-6 items-center rounded-full px-2.5 text-xs font-medium ring-1",
         variants[tone],
         className,
       )}

@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
+import authReducer from "@/lib/features/auth-slice";
 import appReducer from "@/lib/features/app-slice";
 import posReducer from "@/lib/features/pos-slice";
 import { mezaniApi } from "@/lib/services/mezani-api";
 
 export const store = configureStore({
   reducer: {
+    auth: authReducer,
     app: appReducer,
     pos: posReducer,
     [mezaniApi.reducerPath]: mezaniApi.reducer,
